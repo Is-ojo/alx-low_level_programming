@@ -1,13 +1,19 @@
-ines (11 sloc)  243 Bytes
+#include <unistd.h>
 
-#include <stdio.h>
 /**
- * main - My enter point
- * Description: This is a function to print something out
- * Return: Always 0 (sucess)
+ * main - Entry point
+ *
+ * Return: Always 1 (Success)
  */
+
 int main(void)
+
 {
-printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-return (0);
+
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(2, str1, 59);
+
+	return (1);
+
 }
