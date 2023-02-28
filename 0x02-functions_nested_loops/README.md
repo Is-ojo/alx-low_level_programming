@@ -1,1 +1,1 @@
-This project is about functions and nested loops in C Programming Language
+This is one of the daily task i took at alx and this is specifically for FUNCTIONS AND NESTED LOOPS
