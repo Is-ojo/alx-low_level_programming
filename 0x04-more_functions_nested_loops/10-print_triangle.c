@@ -1,37 +1,49 @@
 #include "main.h"
 
-/**
- * void print_triangle - check the code
- *@size : this is the sieze of the triangle 
- */
 void space(int a);
+void harsh(int b);
+
+/**
+ * print_triangle - check the code
+ * @size : this is the sieze of the triangle
+ */
+
 void print_triangle(int size)
 {
-int i;
-int j;
-if ( size > 0 )
-{	
-for (i = 1; i <= size ; i++)
+int i = 1;
+if (size > 0)
 {
-	for (j=1; j<=i;j++)
+	while (i <= size)
 	{
-		space(size-j);
-		_putchar('#');
+		space(size - i);
+		harsh(i);
+		_putchar('\n');
+		i++;
 	}
+}
+else
 _putchar('\n');
 }
 
-}
-else 
-_putchar('\n');
-_putchar('\n');
-}
+/**
+ * space - this prints a number of space
+ * @a : number of space it would print
+ */
+
 void space(int a)
 {
-if (a > 0)
-{
-
-        for (; a >= 1; a--)
-                _putchar(' ');
+	for (; a >= 1; a--)
+		_putchar(' ');
 }
+
+
+/**
+ * harsh - prints # a number of times
+ * @b : the number of time it is going to print #
+ */
+
+void harsh(int b)
+{
+	for (; b >= 1; b--)
+		_putchar('#');
 }
