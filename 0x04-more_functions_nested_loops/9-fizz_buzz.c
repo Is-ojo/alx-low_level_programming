@@ -7,6 +7,7 @@
 int main(void)
 {
 	int n = 1;
+
 	for (; n <= 100; n++)
 	{
 		if ((n % 15) == 0)
@@ -24,4 +25,3 @@ int main(void)
 	return (0);
 
 }
-	
